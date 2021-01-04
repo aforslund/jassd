@@ -212,7 +212,7 @@ public class JassdController {
 }
 ```
 
-Running Application.java class and calling https://localhost:8080/jassd/cars would then result in the json response:
+Running Application.java class and calling http://localhost:8080/jassd/cars would then result in the json response:
 
 ```
 // 20210104220030
