@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>jassd</groupId>
     <artifactId>jassd</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -36,10 +36,10 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
     <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub jassd Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/jassd</url>
-        </repository>
+       <repository>
+         <id>github</id>
+         <name>GitHub aforslund Apache Maven Packages</name>
+         <url>https://maven.pkg.github.com/aforslund/jassd</url>
+       </repository>
     </distributionManagement>
 </project>
