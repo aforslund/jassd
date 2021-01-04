@@ -11,10 +11,3 @@
     </profile>
 </profiles>
 
-<servers>
-    <server>
-        <id>github</id>
-        <username>aforslund</username>
-        <password>f3e20267f837402aca46fe719696d6d238b8794d</password>
-    </server>
-</servers>
