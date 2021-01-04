@@ -37,9 +37,10 @@ generator.spacing=2
 Then the following files will will be generated.  The generated files as a Spring Boot project (with only application.properties and Application.java added from what was generated) can be found [here](https://github.com/aforslund/jassd/blob/main/media/jassd_demo.zip?raw=true).
 
 ### Model files - POJOs with getter/setters representing tables in the database
-..* jassd.model.Car
-..* jassd.model.User
-..* jassd.model.UserCars
+
+* jassd.model.Car
+* jassd.model.User
+* jassd.model.UserCars
 
 The Car class, for example, will then look like this:
 
@@ -104,7 +105,7 @@ public class Car {
 
 ### Dao interfaces
 
-..* jassd.dao.JassdDao.java
+* jassd.dao.JassdDao.java
 
 It contains interfaces for all the models.  A nice future feature release would be to potentially seprate them to separate files, but it might also be nice to do that on your own as you work off of this basic set of files.
 
@@ -122,7 +123,7 @@ public interface JassdDao {
 
 ### Dao implementation classes
 
-..* jassd.dao.impl.JassdDaoImpl.java
+* jassd.dao.impl.JassdDaoImpl.java
 
 Contains the actual jdbc sql commands, with both NamedParameterJdbcTemplate and JdbcTemplate implementation, using Updater, Creator, and Extractor subclasses.
 
@@ -182,6 +183,8 @@ public class JassdDaoImpl implements JassdDao {
 ```
 
 ### Basic controller
+
+* jassd.controller.JassdController.java
 
 And finally a basic controller that lets you access json REST calls.  Personally I prefer to put a service facade between the controller and Dao layer, but this is to give some basic setup to be able to get going.
 
